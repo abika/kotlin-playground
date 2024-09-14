@@ -137,34 +137,6 @@ fun isValid(input: String): Boolean {
     return rec(input, ArrayDeque())
 }
 
-enum class Nat { UNKNOWN, ENGLISH, SPANISH, UKRAIN }
-enum class Color { UNKNOWN, RED, GREEN }
-enum class Pet { UNKNOWN, DOGGO }
-enum class Drink { UNKNOWN, COFFEFEE, TEA }
-data class House(
-    val position: Int = -1,
-    val color: Color = Color.UNKNOWN,
-    val nationality: Nat = Nat.UNKNOWN,
-    val pet: Pet = Pet.UNKNOWN,
-    val bevarage: Drink = Drink.UNKNOWN,
-    val cigarette: Int
-)
-
-fun drinksWater(): String {
-    House(nationality = Nat.ENGLISH, color = Color.RED)
-    House(nationality = Nat.SPANISH, pet = Pet.DOGGO)
-    House(bevarage = Drink.COFFEFEE, color = Color.GREEN)
-    House(nationality = Nat.UKRAIN, bevarage = Drink.TEA)
-
-    val houses = listOf(House(1))
-
-    TODO("Implement this function to complete the task")
-}
-
-fun ownsZebra(): String {
-    TODO("Implement this function to complete the task")
-}
-
 fun main() {
     val rawInput = """·*·*·
 ··*··
